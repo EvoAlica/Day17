@@ -5,10 +5,11 @@ const range = {
   num2: 88.8,
   average: 45.325,
 };
-// Only change code below this line
 
-const middle = ({ max, min }) => (max + min) / 2.0;
+function middle(range1) {
+  const { max: max, min: min } = range1;
 
-// Only change code above this line
+  return (max + min) / 2;
+}
 console.log(middle(range));
 module.exports = middle;
